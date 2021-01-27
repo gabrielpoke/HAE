@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Novo Projeto HAE</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../_css/novoUsuario.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <div class="container">
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="form_main">
+                            <h4 class="heading"><strong>Cadastrar Novo  </strong> Projeto <span></span></h4>
+                            <div class="form">
+                            <form action="../_php/diretor.php" method="post" id="newHAE" name="newHAE">
+                                
+                                <input type="text"  placeholder="Nome do Projeto"  name="nomeProjeto" class="txt">
+                                <input type="text"  placeholder="Horas Disponiveis"  name="horasDisponiveis" class="txt" maxlength="4">
+                                <label><h2>Bibliografia:</h2></label><br><br>
+                                <textarea type="text"  name="bibliografias"rows="30" cols="150" class="text"></textarea><br><br>
+                                <label><h2>Justificativa: </h2></label><br><br>
+                                <textarea type="text"name="justificativa" rows="30" cols="150" class="text"></textarea><br><br>
+                            <form action="../_php/formulario.php" method="post">
+                                <input type="submit" name="submit" placeholder="Enviar"class="txt2">
+                                <button type ="submit" onclick="location.href='../_php/diretor.php'" class="txt2">Cancelar</button>
+                                
+                                
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+</body>
+</html>

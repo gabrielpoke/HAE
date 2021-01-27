@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Novo Usuário</title>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../_css/novoUsuario.css" rel="stylesheet" type="text/css">
+    
+    <center>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-4">
+                <div class="form_main">
+                        <h4 class="heading"><strong>Cadastrar </strong> Usuário <span></span></h4>
+                        <div class="form">
+                        <form action="../_php/criarUsuario.php" method="post" id="usuario" name="newUsuario">
+                            <input type="text"  placeholder="Nome"  name="nome" class="txt">
+                            <input type="text"  placeholder="CPF"   name="cpf" class="txt" id="cpf" onkeypress="mascara('###.###.###-##',this,event,true)" maxlength="14">
+                            <input type="text"  placeholder="Matricula" name="matricula" class="txt"><br>
+                            <select name='cargo'>
+                                    <option>Selecione o Cargo...</option>
+                                    <option>Professor</option>
+                                    <option>Coordenador</option>
+                                    <option>Diretor</option>
+                                    <option>Administrador</option>
+                            </select><br>
+                            <input type="text"  placeholder="Nome de Usuario" name="nomeUsuario" class="txt">
+                            <input type="text"  placeholder="Senha"  name="senha" class="txt">
+                            <input type="text"  placeholder="Nome da rua com número" name="rua" class="txt">
+                            <input type="text"  placeholder="Bairro" name="bairro" class="txt">
+                            <input type="text"  placeholder="Cidade" name="cidade" class="txt">
+                            
+                            <input type="submit" value="Cadastrar" name="submit" class="txt2">
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>    
+    <script src="../_js/mascara.min.js"></script>
+</body>
+</html>

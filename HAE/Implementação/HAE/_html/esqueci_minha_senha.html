@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Esqueci minha senha</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../_css/novoUsuario.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <div class="container">
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="form_main">
+                            <h4 class="heading"><strong>Cadastrar Nova  </strong> Senha <span></span></h4>
+                            <div class="form">
+                            <form action="../_php/nova_senha.php" method="post" id="novaSenha" name="newHAE">
+                                
+                                <input type="text"  placeholder="Nome de Usuário"  name="nomeUsuario" class="txt">
+                                <input type="text"  placeholder="Nova Senha" name="newSenha" class="txt" maxlength="20">
+                                <input type="submit" name="submit" placeholder="Enviar"class="txt2" method="post">
+                                <button type ="submit" onclick="location.href='../index.html'" class="txt2">Cancelar</button>
+                                
+                                
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+</body>
+</html>
